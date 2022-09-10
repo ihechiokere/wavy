@@ -20,8 +20,8 @@ const Home = () => {
           <h1 className="head left-align lh10">
             Need More Viewers For Your WhatsApp Status?
           </h1>
-          <hr className="line" />
-          <p className="fs20 left-align lh15">
+          <hr className="line mt100" />
+          <p className="fs20 left-align mt100 lh15">
             You can now grow your WhatsApp Audience and Views as You and other
             participants get to save each others contact in just one click
           </p>
