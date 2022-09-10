@@ -60,72 +60,67 @@ const FlagApp = () => {
       <div>
         <div>
           {/* header section */}
-          <div>
-            
-          </div>
+          <div></div>
 
           {/* body section */}
           <div>
-              { loading === true?
-               <div>
-                   <p>...loading</p>
-               </div>:
-                  <div
-                  //flag app wrapper
-                  >
-            
+            {loading === true ? (
               <div>
-                <select
-                  value={selectedCountry}
-                  onChange={(e) => setSelectedCountry(e.target.value)}
-                  className='country sub-input'
-                  >
-                  <option>--Select Country--</option>
-                  {countries.map((item) => {
-                      return (
-                          <option key={uuidv4()} value={item.name.common}>
-                        {item.name.common}
-                      </option>
-                    );
-                })}
-                </select>
+                <p>...loading</p>
               </div>
-              <div>
-                {searchSelectedCountry && (
+            ) : (
+              <div
+              //flag app wrapper
+              >
+                <div>
+                  <select
+                    value={selectedCountry}
+                    onChange={(e) => setSelectedCountry(e.target.value)}
+                    className="country sub-input"
+                  >
+                    <option>--Select Country--</option>
+                    {countries.map((item) => {
+                      return (
+                        <option key={uuidv4()} value={item.name.common}>
+                          {item.name.common}
+                        </option>
+                      );
+                    })}
+                  </select>
+                </div>
+                <div>
+                  {searchSelectedCountry && (
                     <div>
-                    <div>
-                      <img
-                        className='flag'
-                        src={
+                      <div>
+                        <img
+                          className="flag"
+                          src={
                             searchSelectedCountry &&
                             searchSelectedCountry.flags.png
-                        }
-                        alt=""
+                          }
+                          alt=""
                         />
-                    </div>
-                    <div>
-                      <p
-                      className='code'
-                      >
-                        {searchSelectedCountry &&
-                          searchSelectedCountry.idd.root}
-                        {searchSelectedCountry &&
-                          searchSelectedCountry.idd.suffixes}
-                      </p>
-                    </div>
-                    <div>
-                      <input
-                        type="tel"
-                        placeholder="Phone"
-                        className="sub-input"
+                      </div>
+                      <div>
+                        <p className="code">
+                          {searchSelectedCountry &&
+                            searchSelectedCountry.idd.root}
+                          {searchSelectedCountry &&
+                            searchSelectedCountry.idd.suffixes}
+                        </p>
+                      </div>
+                      <div>
+                        <input
+                          type="tel"
+                          placeholder="Phone"
+                          className="sub-input"
                         />
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
-              
-            </div>
-            }
+            )}
           </div>
         </div>
       </div>
