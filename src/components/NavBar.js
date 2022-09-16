@@ -36,8 +36,6 @@ const NavBar = () => {
             <Link to="/contactus">Contact Us</Link>
           </li>          
         </ul>
-        {/* </nav>) : ''} */}
-        {/* <h1>NAVBAR</h1> */}
       </div>
     </>
   );

@@ -10,53 +10,64 @@ import {
   FaFacebook,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import FlagApp from "./FlagApp";
 
 const Home = () => {
   return (
     <div className="App">
-      <section className="about">
-        <div>
-          <h1 className="head left-align lh10">
-            Need More Viewers For Your WhatsApp Status?
-          </h1>
-          <hr className="line mt100" />
-          <p className="fs20 left-align mt100 lh15">
-            You can now grow your WhatsApp Audience and Views as You and other
-            participants get to save each others contact in just one click
-          </p>
-          <button>
-            <FaDownload className="btn-icon" />
-            Download
-          </button>
-          <button>
-            <FaEdit className="btn-icon" />
-            Submit entry
-          </button>
-        </div>
-        <div className="stop-gap"></div>
-      </section>
-      {/* <section > */}
-      <table
-      // className='tab'
-      >
-        <tr className="table-head">
-          <th className="fs20">Benefits</th>
-        </tr>
-        <tr>
-          <ul className="fs16">
-            <li>More popularity = More money</li>
-            <li>More interesting statuses to view</li>
-            <li>More sales for business owners</li>
-            <li>More people get to know about you and your business</li>
-            <li>If you're self employed, you can have better opportunities</li>
-            <li>Helps you discover new sources of income</li>
-            <li>Helps you find more interesting people like you</li>
-          </ul>
-        </tr>
-      </table>
-      {/* </section> */}
-      <section>
+      <div className="flexed-viewers">
+        <section className="about">
+          <div>
+            <h1 className="head left-align lh10">
+              Need More Viewers For Your WhatsApp Status?
+            </h1>
+            <hr className="line mt100" />
+            <p className="fs20 left-align mt100 lh15">
+              You can now grow your WhatsApp Audience and Views as You and other
+              participants get to save each others contact in just one click
+            </p>
+            <button>
+              <FaDownload className="btn-icon" />
+              Download
+            </button>
+            <button>
+              <FaEdit className="btn-icon" />
+              Submit entry
+            </button>
+          </div>
+        </section>
+        <section>
+          <div className="stop-gap"></div>
+        </section>
+      </div>
+      <div className="flexed-benefits">
+        <section className="section-table">
+          <table
+          // className='tab'
+          >
+            <tr className="table-head">
+              <th className="fs20">Benefits</th>
+            </tr>
+            <tr>
+              <ul className="fs16">
+                <li>More popularity = More money</li>
+                <li>More interesting statuses to view</li>
+                <li>More sales for business owners</li>
+                <li>More people get to know about you and your business</li>
+                <li>
+                  If you're self employed, you can have better opportunities
+                </li>
+                <li>Helps you discover new sources of income</li>
+                <li>Helps you find more interesting people like you</li>
+              </ul>
+            </tr>
+          </table>
+        </section>
+        <div className="stop-gap-table"></div>
+      </div>
+      {/* <div className="flexed-premium"> */}
+      <section className="flexed-premium">
         <p className="left-align fs42 b600">Go Premium</p>
         <table className="table fs16 left-align">
           <tr className="bac-gr wh-txt">
@@ -89,48 +100,51 @@ const Home = () => {
           </tr>
         </table>
       </section>
+      {/* </div> */}
       <section>
         <p className="left-align fs42 b600">Procedures</p>
-        <div className="mini-box">
-          <div className="wrap">
-            <FaSuitcase className="proc-icon" />
-            <h3 className="proc-title">Select Plan</h3>
-            <p className="box-para">
-              Choose between the free plan and the premium plan according to
-              what best suits your needs. Remember that the premium plan has
-              more to offer
-            </p>
+        <div className="flexed-procedures">
+          <div className="mini-box">
+            <div className="wrap">
+              <FaSuitcase className="proc-icon" />
+              <h3 className="proc-title">Select Plan</h3>
+              <p className="box-para">
+                Choose between the free plan and the premium plan according to
+                what best suits your needs. Remember that the premium plan has
+                more to offer
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="mini-box">
-          <div className="wrap">
-            <FaPencilAlt className="proc-icon" />
-            <h3 className="proc-title">Fill in correct information</h3>
-            <p className="box-para">
-              Fill in your correct information when submitting your contact
-              information to ensure that you get the best out of our services
-            </p>
+          <div className="mini-box">
+            <div className="wrap">
+              <FaPencilAlt className="proc-icon" />
+              <h3 className="proc-title">Fill in correct information</h3>
+              <p className="box-para">
+                Fill in your correct information when submitting your contact
+                information to ensure that you get the best out of our services
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="mini-box">
-          <div className="wrap">
-            <FaKey className="proc-icon" />
-            <h3 className="proc-title">Secure Your Password</h3>
-            <p className="box-para">
-              After your successful payment, you will be given a unique password
-              which will be required to download the contact file
-            </p>
+          <div className="mini-box">
+            <div className="wrap">
+              <FaKey className="proc-icon" />
+              <h3 className="proc-title">Secure Your Password</h3>
+              <p className="box-para">
+                After your successful payment, you will be given a unique
+                password which will be required to download the contact file
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="mini-box">
-          <div className="wrap">
-            <FaAddressCard className="proc-icon" />
-            <h3 className="proc-title">Download Compiled Contracts</h3>
-            <p className="box-para">
-              Come back to Download and install the contact file which will be
-              uploaded by 9:00pm in a .vcf format. This contact file will also
-              be saved by others
-            </p>
+          <div className="mini-box">
+            <div className="wrap">
+              <FaAddressCard className="proc-icon" />
+              <h3 className="proc-title">Download Compiled Contracts</h3>
+              <p className="box-para">
+                Come back to Download and install the contact file which will be
+                uploaded by 9:00pm in a .vcf format. This contact file will also
+                be saved by others
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -251,9 +265,9 @@ const Home = () => {
         <p className="left-align fs20 mt100">
           Check out WassapViews Creators meant for businesses like yours
         </p>
-        <button className="form-btn mt100 btn-sm" style={{ width: "80%" }}>
-          Become a WassapViews Creator
-        </button>
+        <Link to="./creators">
+          <button style={{ width: "80%" }}>Become a WassapViews Creator</button>
+        </Link>
       </div>
     </div>
   );
