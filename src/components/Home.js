@@ -43,9 +43,7 @@ const Home = () => {
       </div>
       <div className="flexed-benefits">
         <section className="section-table">
-          <table
-          // className='tab'
-          >
+          <table>
             <tr className="table-head">
               <th className="fs20">Benefits</th>
             </tr>
@@ -66,7 +64,6 @@ const Home = () => {
         </section>
         <div className="stop-gap-table"></div>
       </div>
-      {/* <div className="flexed-premium"> */}
       <section className="flexed-premium">
         <p className="left-align fs42 b600">Go Premium</p>
         <table className="table fs16 left-align">
@@ -100,8 +97,7 @@ const Home = () => {
           </tr>
         </table>
       </section>
-      {/* </div> */}
-      <section>
+      <section className="procedures">
         <p className="left-align fs42 b600">Procedures</p>
         <div className="flexed-procedures">
           <div className="mini-box">
@@ -148,7 +144,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mini-box mt400">
+      <section className="mini-box mt400 section-form">
         <div className="wrap">
           <p className="left-align fs34 b600">Submit your name and number</p>
           <p className="left-align mt100">
@@ -209,56 +205,58 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mini-box-share">
-        <div className="wrap mt300">
-          <h1 className="left-align">Blocked Contacts</h1>
-          <p className="left-align b600">
-            Here is a list of the last 5 blocked contacts who have been found
-            violating our rules and will therefore not be included in future
-            compilations
-          </p>
-          <table className="mt200">
-            <tr className="tr-blocked">
-              <td className="td-blocked b600">Name & Phone number:</td>
-            </tr>
-            <tr className="tr-blocked">
-              <td className="td-blocked b600">Name & Phone number:</td>
-            </tr>
-            <tr className="tr-blocked">
-              <td className="td-blocked b600">Name & Phone number:</td>
-            </tr>
-            <tr className="tr-blocked">
-              <td className="td-blocked b600">Name & Phone number:</td>
-            </tr>
-            <tr className="tr-blocked">
-              <td className="td-blocked b600">Name & Phone number:</td>
-            </tr>
-          </table>
-          <hr />
-        </div>
-      </section>
-      <section className="mini-box-share">
-        <div className="wrap mt300">
-          <h1 className="left-align">Report Contacts</h1>
-          <p className="left-align b600">
-            If you think any WV contact has acted badly and you want us to look
-            into it, kindly submit their phone number here
-          </p>
-          <input
-            className="sub-input mt100"
-            type="number"
-            placeholder="Enter contact's phone number"
-          />
-          <textarea
-            className="sub-input mt150"
-            rows={4}
-            cols={5}
-            placeholder="Tell us why you are reporting this contact"
-          ></textarea>
-          <button className="form-btn mt300">Report</button>
-        </div>
-      </section>
-      <div>
+      <div className="flexed-blocked-report">
+        <section className="mini-box blocked-contacts">
+          <div className="wrap mt300">
+            <h1 className="left-align">Blocked Contacts</h1>
+            <p className="left-align b600">
+              Here is a list of the last 5 blocked contacts who have been found
+              violating our rules and will therefore not be included in future
+              compilations
+            </p>
+            <table className="mt200">
+              <tr className="tr-blocked">
+                <td className="td-blocked b600">Name & Phone number:</td>
+              </tr>
+              <tr className="tr-blocked">
+                <td className="td-blocked b600">Name & Phone number:</td>
+              </tr>
+              <tr className="tr-blocked">
+                <td className="td-blocked b600">Name & Phone number:</td>
+              </tr>
+              <tr className="tr-blocked">
+                <td className="td-blocked b600">Name & Phone number:</td>
+              </tr>
+              <tr className="tr-blocked">
+                <td className="td-blocked b600">Name & Phone number:</td>
+              </tr>
+            </table>
+            <hr />
+          </div>
+        </section>
+        <section className="mini-box-share blocked-report">
+          <div className="wrap mt300">
+            <h1 className="left-align">Report Contacts</h1>
+            <p className="left-align b600">
+              If you think any WV contact has acted badly and you want us to
+              look into it, kindly submit their phone number here
+            </p>
+            <input
+              className="sub-input mt100"
+              type="number"
+              placeholder="Enter contact's phone number"
+            />
+            <textarea
+              className="sub-input mt150"
+              rows={4}
+              cols={5}
+              placeholder="Tell us why you are reporting this contact"
+            ></textarea>
+            <button className="form-btn mt300">Report</button>
+          </div>
+        </section>
+      </div>
+      <div className='mini-box-pers'>
         <p className="fs34 left-align b600 mt200 lh10">
           Build Your Personalized Whatsapp Audience
         </p>
