@@ -22,8 +22,10 @@ const Home = () => {
             <h1 className="head left-align lh10">
               Need More Viewers For Your WhatsApp Status?
             </h1>
-            <hr className="line mt100" />
-            <p className="fs20 left-align mt100 lh15">
+            <div className='mt100'></div>
+            <hr />
+            <div className='mt100'></div>
+            <p className="fs20 left-align lh15">
               You can now grow your WhatsApp Audience and Views as You and other
               participants get to save each others contact in just one click
             </p>
@@ -43,6 +45,7 @@ const Home = () => {
       </div>
       <div className="flexed-benefits">
         <section className="section-table">
+        <div className='mt200'></div>
           <table>
             <tr className="table-head">
               <th className="fs20">Benefits</th>
@@ -144,10 +147,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mini-box mt400 section-form">
+      <div className='mt400'></div>
+      <section className="mini-box section-form">
         <div className="wrap">
           <p className="left-align fs34 b600">Submit your name and number</p>
-          <p className="left-align mt100">
+          <div className='mt100'></div>
+          <p className="left-align">
             Submit your name and number to be compiled for download by yourself
             and others
           </p>
@@ -207,14 +212,16 @@ const Home = () => {
       </section>
       <div className="flexed-blocked-report">
         <section className="mini-box blocked-contacts">
-          <div className="wrap mt300">
+        <div className='mt300'></div>
+          <div className="wrap">
             <h1 className="left-align">Blocked Contacts</h1>
             <p className="left-align b600">
               Here is a list of the last 5 blocked contacts who have been found
               violating our rules and will therefore not be included in future
               compilations
             </p>
-            <table className="mt200">
+            <div className='mt200'></div>
+            <table>
               <tr className="tr-blocked">
                 <td className="td-blocked b600">Name & Phone number:</td>
               </tr>
@@ -235,7 +242,8 @@ const Home = () => {
           </div>
         </section>
         <section className="mini-box-share blocked-report">
-          <div className="wrap mt300">
+          <div className="wrap">
+          <div className='mt300'></div>
             <h1 className="left-align">Report Contacts</h1>
             <p className="left-align b600">
               If you think any WV contact has acted badly and you want us to
@@ -257,16 +265,19 @@ const Home = () => {
         </section>
       </div>
       <div className='mini-box-pers'>
-        <p className="fs34 left-align b600 mt200 lh10">
+        <p className="fs34 left-align b600 lh10">
+        <div className='mt200'></div>
           Build Your Personalized Whatsapp Audience
         </p>
-        <p className="left-align fs20 mt100">
+        <div className='mt100'></div>
+        <p className="left-align fs20">
           Check out WassapViews Creators meant for businesses like yours
         </p>
         <Link to="./creators">
           <button style={{ width: "80%" }}>Become a WassapViews Creator</button>
         </Link>
       </div>
+      <div className='mt300'></div>
     </div>
   );
 };

@@ -5,32 +5,41 @@ import { Link } from "react-router-dom";
 const Creators = () => {
   return (
     <div className="App">
-      <p className="fs30 b600">
-        Build your personal WhatsApp contact list with WassapViews Creators
-      </p>
-      <section className="about">
+      <section className="flexed-creators">
+        <p className="fs30 fs60 b600">
+          Build your personal WhatsApp contact list with WassapViews Creators
+        </p>
         <p className="fs20 mt100">
           The easiest way to build your WhatsApp contact list, get people to
           save yours and also get to save thousands of contacts anywhere in the
           world
         </p>
-        <Link to="/register">
-          <button>CREATE ACCOUNT</button>
-        </Link>
-        <Link to="/login">
-          <button>LOGIN</button>
-        </Link>
+        <div>
+          <Link to="/register">
+            <button>CREATE ACCOUNT</button>
+          </Link>
+          <Link to="/login">
+            <button>LOGIN</button>
+          </Link>
+        </div>
       </section>
-      <section>
-        <p className="fs30 b600">Save and be Saved Easily</p>
-        <p className="fs20 b600 mt100">
-          Building a brand is hard, growing your WhatsApp audience shouldn't be
-        </p>
-        <div className="stop-gap"></div>
+      <section className="mt100 flexed-save-stop">
+        <div className="flexed" style={{ order: 2 }}>
+          <div>
+            <p className="fs30 b600">Save and be Saved Easily</p>
+            <p className="fs20 b600 mt100">
+              Building a brand is hard, growing your WhatsApp audience shouldn't
+              be
+            </p>
+          </div>
+        </div>
+        <div className="stop-gap" style={{ order: 1 }}></div>
+      </section>
+      <section className="flexed-creators">
         <p className="fs30 b600 mt200 lh10">
           Start growing your contact list in 5 minutes
         </p>
-        <div>
+        <div className="flexed">
           <div className="mini-box b600 mt200">
             <div className="wrap left-align">
               <span className="green">1. Create an Account</span>
@@ -40,7 +49,7 @@ const Creators = () => {
               </p>
             </div>
           </div>
-          <div className="mini-box b600">
+          <div className="mini-box b600" style={{flexGrow: 1}}>
             <div className="wrap left-align">
               <span className="green">2. Create your Business Card</span>
               <p className="mt50">
@@ -58,6 +67,8 @@ const Creators = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
           <Link to="/register">
             <button>CREATE ACCOUNT</button>
           </Link>
