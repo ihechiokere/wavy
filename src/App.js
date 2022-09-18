@@ -11,7 +11,6 @@ import ContactUs from "./components/Contactus";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
-// import Footer from './components/Footer'
 import Register from "./components/Register";
 
 function App() {

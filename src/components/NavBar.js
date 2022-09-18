@@ -14,25 +14,25 @@ const NavBar = () => {
         <ul
           className={`modal-content ${modalOpen ? "full-modal-content" : ""}`}
         >
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/">Home</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/creators">Wassapviews Creators</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/downloads">Downloads</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/help">Help Center/Guide</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/howto">How to Install the VCF File</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/TOS">Terms of Service</Link>
           </li>
-          <li onClick={() => setModalOpen(false)}>
+          <li>
             <Link to="/contactus">Contact Us</Link>
           </li>          
         </ul>
