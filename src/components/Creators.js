@@ -39,8 +39,9 @@ const Creators = () => {
         <p className="fs30 b600 mt200 lh10">
           Start growing your contact list in 5 minutes
         </p>
-        <div className="flexed">
-          <div className="mini-box b600 mt200">
+        <div className='mt100'></div>
+        <div className="flexed-start-growing">
+          <div className="mini-box-creators b600 mt200">
             <div className="wrap left-align">
               <span className="green">1. Create an Account</span>
               <p className="mt50">
@@ -49,7 +50,7 @@ const Creators = () => {
               </p>
             </div>
           </div>
-          <div className="mini-box b600" style={{flexGrow: 1}}>
+          <div className="mini-box-creators b600">
             <div className="wrap left-align">
               <span className="green">2. Create your Business Card</span>
               <p className="mt50">
@@ -58,7 +59,7 @@ const Creators = () => {
               </p>
             </div>
           </div>
-          <div className="mini-box b600">
+          <div className="mini-box-creators b600">
             <div className="wrap left-align">
               <span className="green">3. Start Growing</span>
               <p className="mt50">

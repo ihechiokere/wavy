@@ -684,6 +684,25 @@ select option {
     margin: 2rem auto;
   }
 
+  .flexed-downloads {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: 300px;
+    /* border: 2px solid yellow; */
+    margin: 2rem auto;
+  }
+
+  .flexed-help{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1100px;
+    height: 150px;
+    /* border: 2px solid yellow; */
+    margin: 2rem auto;
+  }
+
   .flexed-save-stop {
     display: flex;
     flex-direction: row;
@@ -697,6 +716,14 @@ select option {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 2px solid green;
+  }
+
+  .flexed-start-growing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid green;
   }
 
   section {
@@ -837,6 +864,27 @@ select option {
     padding: 1rem;
     border-radius: 0.25rem;
     margin-bottom: 0.5em;
+  }
+
+  .mini-box-creators {
+    margin: auto;
+    height: 180px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #02b875;
+    margin-bottom: 1.25em;
+    font-size: smaller;
+  }
+
+  .mini-box-help {
+    /* margin: 2rem auto; */
+    width: 550px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    /* border: 2px solid; */
+    margin: 0 auto;
   }
 
   .mt400 {
